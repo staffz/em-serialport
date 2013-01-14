@@ -1,8 +1,8 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "em-serialport/version"
+require "em-serialport-staffz/version"
 
 Gem::Specification.new do |s|
-  s.name        = "em-serialport"
+  s.name        = "em-serialport-staffz"
   s.version     = Em::Serialport::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Anup Narkhede"]
@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = ['serial-monitor']
+  s.executables   = []
   s.require_paths = ["lib"]
 
-  s.add_dependency "eventmachine", "0.12.10"
+  s.add_dependency "eventmachine", "1.0"
   s.add_dependency "serialport"
 end
